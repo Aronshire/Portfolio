@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ../build"
   },
-  "homepage": "https://aronshire.github.io/Aronshire.github.io",
+  "homepage": "https://aronshire.github.io/Portfolio",
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
     "axios": "^0.27.2",
