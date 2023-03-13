@@ -1,4 +1,5 @@
 {
+  "homepage": "https://aronshire.github.io/Portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "private": false,
@@ -8,9 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ../build"
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://aronshire.github.io/Portfolio",
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
     "axios": "^0.27.2",
