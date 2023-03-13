@@ -8,8 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+	  "export": "next export",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.6",

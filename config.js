@@ -7,7 +7,7 @@ module.exports = {
         token2: "sQrU6hpJNdqo10J2IkmuF"
     },
     about:{
-        description: "Hello, I'm Yusuf, 18 year old developer living in Turkey. I am the technical manager of the PCIFIC Esports team.",
+        description: "Hello, I'm Yusuf, 18 year old developer living in Turkey and technical manager of the PCIFIC Esports team. Recently, I have been working as a volunteer in the positions of director and community manager in esports broadcasts.",
     },
     social:{
         github: "https://github.com/Aronshire",

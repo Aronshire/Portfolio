@@ -15,13 +15,10 @@ export default function SpotifyCard() {
           <div className="w-full p-0,5 mt-10 rounded-md dark:bg-gradient-to-r from-green-600 to-green-800  bg-green-600">
            
             <div className="relative">
-             
-
-
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
                   <div className="relative ml-3">
-                  <i class="fa-brands fa-spotify fa-lg flex justify-center absolute bottom-1 top-0  w-6 h-6 rounded-full bg-green-600 items-center text-white"> </i>
+                  <i className="fa-brands fa-spotify fa-lg flex justify-center absolute bottom-1 top-0  w-6 h-6 rounded-full bg-green-600 items-center text-white"> </i>
                      <img
                     src={data?.album_art_url}
                     alt={data?.song}
