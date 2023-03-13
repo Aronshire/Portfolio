@@ -2,7 +2,7 @@ export default async(req, res) => {
     const project = [
         {
             "name": "Ringoffires.com",
-            "link": "",
+            "link": "https://cdn.discordapp.com/attachments/710864623242444901/1084858988484636702/image.png",
             "description": "Ring Of Fire event coordination firm, a subsidiary of PCIFIC Esports.",
             "html_url": "https://ringoffires.com"
         },
