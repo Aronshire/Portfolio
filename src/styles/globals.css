@@ -48,6 +48,14 @@
   font-display: swap;
 }
 
+.countDown {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
 * {
   font-family: 'Creal', sans-serif;
 
