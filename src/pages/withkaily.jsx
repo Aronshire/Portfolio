@@ -1,3 +1,4 @@
+import swr from '../lib/swr';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import config from "../../config";
 const minuteSeconds = 60;
@@ -16,6 +17,10 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 export default function withKaily() {
+
+    const { data: me } = swr("/api/v1/me");
+    const _me = me ? me : null;
+
     function renderTime(dimension, time) {
         return (
             <div className="time-wrapper">
@@ -42,7 +47,7 @@ export default function withKaily() {
                                 className={
                                     "rounded-full ring-[3px] ring-indigo  w-44 h-44 "
                                 }
-                                src="https://cdn.discordapp.com/avatars/587615441640226837/25b197933d56f562ccbc3eeb86c37ace.png"
+                                src={`https://cdn.discordapp.com/avatars/${_me?.data.discord_user.id}/${_me?.data.discord_user.avatar}.png`}
                             />
                             <div className="relative">
                             </div>
@@ -63,7 +68,7 @@ export default function withKaily() {
                             className={
                                 "rounded-full ring-[3px] ring-indigo  w-44 h-44 "
                             }
-                            src="https://cdn.discordapp.com/avatars/587615441640226837/25b197933d56f562ccbc3eeb86c37ace.png"
+                            src={`https://cdn.discordapp.com/avatars/${_me?.data.discord_user.id}/${_me?.data.discord_user.avatar}.png`}
                         />
                     </div>
                 </div>
