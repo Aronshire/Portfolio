@@ -1,15 +1,3 @@
-const date_ = new Date();
-
-function isAvaible() {
-
-    if (date_.getMonth() > 5) {
-        return true
-    }
-    if (date_.getMonth() == 5 && date_.getDate() >= 5) {
-        return true;
-    }
-}
-
 module.exports = {
     discord: {
         id: "587615441640226837",
@@ -19,7 +7,7 @@ module.exports = {
         token1: "ghp_glp5HVMRtuOmz6b",
         token2: "sQrU6hpJNdqo10J2IkmuF"
     },
-    kaily: "05/05/" + (isAvaible() ? date_.getFullYear() + 1 : date_.getFullYear()),
+    kaily: "05/05/2024",
     about: {
         description: "Hello, I'm Yusuf, 18 year old developer living in Turkey and technical manager of the PCIFIC Esports team. Recently, I have been working as a volunteer in the positions of director and community manager in esports broadcasts.",
     },

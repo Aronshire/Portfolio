@@ -42,7 +42,7 @@ export default function withKaily() {
             <div className="w-full h-full flex justify-center items-center">
                 <div className="px-5 w-full h-full">
                     <div className="w-full h-full md:flex justify-center items-center">
-                        <div className="mr-10 flex md:shrink-0 justify-center">
+                        <div className="mr-10 flex md:shrink-0 justify-center place-items-center">
                             <img
                                 className={
                                     "rounded-full ring-[3px] ring-indigo  w-44 h-44 "
@@ -52,7 +52,7 @@ export default function withKaily() {
                             <div className="relative">
                             </div>
                         </div>
-                        <div className="mr-10">
+                        <div className="lg:mr-10 mt-8">
                             <div className="text-2xl font-bold text-center dark:text-white/50">
                                 Aronshire
                             </div>
@@ -66,9 +66,9 @@ export default function withKaily() {
 
                         <img
                             className={
-                                "rounded-full ring-[3px] ring-indigo  w-44 h-44 "
+                                "rounded-full ring-[3px] ring-indigo w-44 h-44 mx-44 md:mx-0 mt-4 md:mt-0"
                             }
-                            src={`https://cdn.discordapp.com/avatars/${_me?.data.discord_user.id}/${_me?.data.discord_user.avatar}.png`}
+                            src={`https://cdn.discordapp.com/avatars/852628541634773063/bd6094b51ddf3e68e79762261bb8910c.png?size=1024`}
                         />
                     </div>
                 </div>
@@ -96,9 +96,7 @@ export default function withKaily() {
                 </div>
             </div>
 
-            <br /><br /><br /><br />
-
-            <div className="countDown">
+            <div className="countDown mt-32">
                 <CountdownCircleTimer
                     {...timerProps}
                     colors="#7E2E84"
